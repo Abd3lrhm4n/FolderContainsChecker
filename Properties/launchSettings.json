@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PngChecker": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\win Service project\\Wahsh To Abdelrahman\\PNG\" \"D:\\win Service project\\Wahsh To Abdelrahman\\RAW\""
+    }
+  }
+}

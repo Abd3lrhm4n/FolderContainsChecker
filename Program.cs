@@ -68,15 +68,19 @@ namespace PngChecker
             {
                 for (int j = 0; j < FinishedImages.Count(); j++)
                 {
+                    string PureName = Path.GetFileNameWithoutExtension(PureImages[i].ToString());
+
+                    string FinishedName = Path.GetFileNameWithoutExtension(FinishedImages[j].ToString());
+                    
                     //get the image name without the Extension
-                    string FinishedName = FinishedImages[j].Name
-                    .Replace(FinishedImages[j].Name
-                    .Substring(FinishedImages[j].Name.IndexOf(FinishedImages[j].Extension, FinishedImages[j].Extension.Length)), "");
+                    // string FinishedName = FinishedImages[j].Name
+                    // .Replace(FinishedImages[j].Name
+                    // .Substring(FinishedImages[j].Name.IndexOf(FinishedImages[j].Extension, FinishedImages[j].Extension.Length)), "");
 
                     //get the image name without the Extension
-                    string PureName = PureImages[i].Name
-                    .Replace(PureImages[i].Name
-                    .Substring(PureImages[i].Name.IndexOf(PureImages[i].Extension, PureImages[i].Extension.Length)), "");
+                    // string PureName = PureImages[i].Name
+                    // .Replace(PureImages[i].Name
+                    // .Substring(PureImages[i].Name.IndexOf(PureImages[i].Extension, PureImages[i].Extension.Length)), "");
 
                     if(FinishedName == PureName)
                     {
